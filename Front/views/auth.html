@@ -1,0 +1,52 @@
+
+
+  <section class="h-100 " style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <img src="https://img.freepik.com/vecteurs-libre/illustration-icone-medicale_53876-6166.jpg?w=740&t=st=1685452789~exp=1685453389~hmac=1538a3e77cd1ddbe9f6fac126d0e09918daa3dfe46a04dc95bea556d0028a3a2"
+                      style="width: 185px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">MINITINDER</h4>
+                  </div>
+  
+                  <form>
+                    <p>Veuillez vous connecter.</p>
+  
+                    <div class="form-outline mb-4">
+                      <input onchange="document.getElementById('erreur_email').classList.add('hidden')" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email" />
+                      <label class="form-label" for="form2Example11">Veuillez entrer votre adresse email</label>
+                      <div id="erreur_email"></div>
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                      <input onchange="document.getElementById('erreur_password').classList.add('hidden')" type="password" class="form-control" id="password" placeholder="Mot de passe" />
+                      <label class="form-label" for="form2Example22">Veuillez entrer votre mot de passe</label>
+                      <div id="erreur_password"></div>
+                    </div>
+
+                    <button type="submit" onclick="authController.authForm(event)"  class="btn btn-primary">Valider</button>
+                  </form>
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Nouveau sur MINITINDER? Créez un compte!</p>
+                    <button type="button" class="btn btn-outline-danger" onclick="navigate('user')">Créer un nouveau compte.</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h3 class="mb-4">SLOGAN MINITINDER</h3>
+                    <p>Phrase descriptive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,72 @@
+<section class="h-100  gradient-custom-2" >
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="card-body p-md-5 mx-md-4">
+
+            <form enctype="multipart/form-data">
+              <fieldset>
+                <legend>Nouveau compte!</legend>
+
+                <div class="form-group">
+                  <label for="email" class="form-label mt-4">Veuillez entrer votre adresse mail.</label>
+                  <input onchange="document.getElementById('erreur_email').classList.add('hidden')" type="email" class="form-control" id="email"  placeholder="email" />
+                  <div id="erreur_email"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="username" class="form-label mt-4">Veuillez entrer votre nom d'utilisateur.</label>
+                  <input class="form-control" onchange="document.getElementById('erreur_username').classList.add('hidden')" id="username" placeholder="nom d'utilisateur" />
+                  <div id="erreur_username"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="password" class="form-label mt-4">Veuillez entrer votre mot de passe</label>
+                  <input type="password" class="form-control" onchange="document.getElementById('erreur_password').classList.add('hidden')" id="password" placeholder="Mot de passe" />
+                  <div id="erreur_password"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="genre" class="form-label mt-4">Vous êtes...?</label><br>
+                  <input onchange="document.getElementById('erreur_genre').classList.add('hidden')" type="radio" name="genre" id="estFemme" /> Une femme
+                  <input type="radio" name="genre" id="estHomme" /> Un homme
+                  <div id="erreur_genre"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="orientation" class="form-label mt-4">Que recherchez-vous?</label><br>
+                  <input onchange="document.getElementById('erreur_orientation').classList.add('hidden')" type="checkbox" name="orientation" id="veutFemme" /> Femme
+                  <input type="checkbox" name="orientation" id="veutHomme" /> Homme
+                  <div id="erreur_orientation"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="age" class="form-label mt-4">Veuillez sélectionner votre âge (min. 18):</label><br>
+                  <input onchange="document.getElementById('erreur_age').classList.add('hidden')" type="number" id="age" name="age" min="18" max="100" placeholder="Age:" />
+                  <div id="erreur_age"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="description" class="form-label mt-4">Veuillez ajouter une petite description de votre profil:</label><br>
+                  <textarea onchange="document.getElementById('erreur_global_desc').classList.add('hidden')"class="form-control" id="description" rows="3"></textarea>
+                  <div id="erreur_global_desc"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="photo" class="form-label mt-4">Choisissez une photo à ajouter.</label>
+                  <textarea onchange="document.getElementById('erreur_photoProfilUrl').classList.add('hidden')"class="form-control" id="photo" rows="3"></textarea>
+                  <div id="erreur_photoProfilUrl"></div>
+                </div>
+
+                <br>
+                <button type="submit" onclick="userController.addUserForm(event)" class="btn btn-primary">Valider</button> Vous serez redirigé(e) vers la page de connexion.
+              </fieldset>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
